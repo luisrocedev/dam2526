@@ -1,0 +1,9 @@
+El capítulo `Primero/Bases de datos/003-Realización de consultas/002-Operadores. Operadores de comparación. Operadores lógicos` tiene como objetivo proporcionar una comprensión detallada de los elementos esenciales utilizados en la construcción de consultas SQL, que son fundamentales para interactuar con bases de datos relacionales.
+
+Sus responsabilidades principales incluyen explicar y ejemplificar el uso de operadores de comparación y operadores lógicos en las consultas SQL. Los operadores de comparación permiten realizar comparaciones entre valores, mientras que los operadores lógicos combinan estas comparaciones para formular condiciones más complejas.
+
+El tipo de contenidos que suele albergar incluye definiciones claras de cada operador, ejemplos prácticos de cómo utilizarlos en consultas SQL, y explicaciones sobre las reglas de precedencia y asociatividad. También puede incluir discusiones sobre funciones agregadas y cómo combinarlas con los operadores para realizar análisis de datos.
+
+Este capítulo contribuye al conjunto proporcionando una base sólida para la creación de consultas eficientes y precisas en bases de datos relacionales, lo que es crucial para el acceso, manipulación y análisis de información. Al entender estos conceptos, los estudiantes y profesionales pueden desarrollar habilidades avanzadas en el manejo de datos, lo cual es fundamental en prácticamente cualquier campo que utilice tecnologías de la información.
+
+Buenas prácticas generales aplicables incluyen el uso de operadores de comparación y lógicos de manera correcta para evitar errores en las consultas. Es importante recordar la precedencia de los operadores y usar paréntesis cuando sea necesario para asegurar que las condiciones se evalúen como se espera. Además, es recomendable probar consultas con datos pequeños o ficticios antes de aplicarlas a conjuntos de datos más grandes para verificar su funcionamiento correcto.

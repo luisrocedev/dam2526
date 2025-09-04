@@ -1,33 +1,7 @@
-### Contenidos básicos
+El capítulo `Primero/Sistemas informáticos` del contexto proporcionado se centra en el estudio de los sistemas microinformáticos, sus componentes, operaciones y gestión. Su propósito es ofrecer una comprensión profunda de cómo funcionan los sistemas informáticos desde la perspectiva técnica, abarcando desde la estructura interna hasta las prácticas de administración y seguridad.
 
-#### Propósito
-La carpeta `Primero/Sistemas informáticos` es un espacio centralizado para la documentación de conocimientos sobre sistemas microinformáticos, instalaciones de sistemas operativos, gestión de información y redes. Su objetivo principal es proporcionar una visión integral del funcionamiento y configuración de los sistemas informáticos en entornos empresariales y educativos.
+Las responsabilidades principales del capítulo incluyen explicar el funcionamiento de las placas base, procesadores, redes y sistemas operativos, así como cómo gestionar y configurar estos componentes. También se enfoca en los métodos para instalar y actualizar sistemas operativos, la gestión de archivos y permisos de acceso, y la configuración de conexiones en red.
 
-#### Responsabilidades principales
-- **Explotación de sistemas microinformáticos**: Documentar la estructura física y lógica de los sistemas, incluyendo componentes como placas base, procesadores y redes.
-- **Instalación de sistemas operativos**: Describir el proceso de instalación, configuración y gestión de diferentes tipos de sistemas operativos.
-- **Gestión de la información**: Explicar técnicas para organizar, almacenar y recuperar datos en sistemas informáticos.
-- **Configuración de sistemas operativos**: Documentar procedimientos para configurar usuarios, grupos, permisos y servicios en sistemas operativos.
+El tipo de contenidos que suele albergar este capítulo abarca desde conceptos básicos hasta temas avanzados, incluyendo diagramas técnicos, explicaciones detalladas de funciones y procedimientos, y ejemplos prácticos. Cada sección proporciona una visión integral del tema, desde la teoría hasta las aplicaciones en el mundo real.
 
-#### Integración con el resto del proyecto
-La carpeta `Primero/Sistemas informáticos` se integra estrechamente con otros módulos del proyecto, como `Bases de datos`, `Desarrollo de interfaces`, y `Programación`. Proporciona la base técnica necesaria para entender cómo los sistemas operativos interactúan con bases de datos, interfaces gráficas y aplicaciones programadas.
-
-#### Contenidos suele albergar
-- **Explotación de sistemas microinformáticos**: Descripciones de componentes, topologías de red, protocolos de seguridad.
-- **Instalación de sistemas operativos**: Procedimientos de instalación, configuración y gestión de aplicaciones.
-- **Gestión de la información**: Técnicas para almacenamiento, recuperación y organización de datos.
-- **Configuración de sistemas operativos**: Configuración de usuarios, grupos, permisos y servicios.
-
-#### Flujos de trabajo habituales
-1. **Instalación y configuración**: Proceso de instalación de sistemas operativos y aplicaciones, incluyendo configuración inicial.
-2. **Gestión de información**: Procedimientos para organizar y recuperar datos en sistemas informáticos.
-3. **Configuración avanzada**: Configuración de servicios y parámetros avanzados en sistemas operativos.
-
-#### Recomendaciones generales de calidad
-- **Organización**: Mantener una estructura jerárquica clara, con subdirectorios para diferentes temas dentro del sistema informático.
-- **Validaciones y pruebas**: Realizar pruebas exhaustivas para asegurar que los procedimientos descritos funcionan correctamente en entornos reales.
-- **Configuración**: Documentar configuraciones específicas y recomendaciones de seguridad.
-- **Observabilidad**: Incluir información sobre cómo monitorear el rendimiento y la salud del sistema.
-- **Documentación**: Mantener documentación actualizada y clara, con ejemplos prácticos y procedimientos paso a paso.
-
-Esta carpeta es fundamental para cualquier proyecto que involucre sistemas informáticos, proporcionando una base sólida de conocimientos técnicos y procedimientos recomendados.
+Este capítulo contribuye al conjunto proporcionando un sólido fundamento técnico sobre sistemas informáticos, que es crucial para entender cómo funcionan los programas y aplicaciones modernas. Las buenas prácticas generales aplicables incluyen la importancia de mantener actualizados los sistemas operativos y las herramientas de seguridad, así como el uso adecuado de comandos y herramientas gráficas para gestionar archivos y configuraciones del sistema. Además, es fundamental comprender cómo proteger la información sensible en sistemas informáticos, lo que implica conocer políticas de acceso y control de privilegios.

@@ -1,0 +1,9 @@
+El capítulo "Primero/Bases de datos/002-Bases de datos relacionales/005-Restricciones de validación" tiene como propósito centrarse en el aspecto crucial de garantizar la integridad y consistencia de los datos almacenados en las bases de datos relacionales. Este capítulo es fundamental para entender cómo se pueden aplicar reglas específicas a los datos que se insertan, actualizan o eliminan en una base de datos relacional.
+
+Las responsabilidades principales del capítulo incluyen explicar qué son las restricciones de validación, cómo se definen y aplican, y cuáles son sus tipos más comunes. También cubrirá cómo estas restricciones pueden ayudar a prevenir la entrada de datos incorrectos o inconsistentes en la base de datos.
+
+El tipo de contenidos que suele albergar este capítulo incluirá definiciones teóricas, explicaciones detalladas de los diferentes tipos de restricciones (como restricciones CHECK, UNIQUE, FOREIGN KEY, NOT NULL, entre otras), ejemplos prácticos de cómo implementar estas restricciones en una base de datos relacional, y posibles implicaciones negativas si no se aplican adecuadamente.
+
+Este capítulo contribuye al conjunto proporcionando a los estudiantes o profesionales un entendimiento profundo sobre la importancia de la validación de datos en las bases de datos relacionales. Ayuda a comprender cómo se pueden diseñar sistemas que sean seguros y confiables, minimizando el riesgo de errores y inconsistencias en los datos.
+
+Buenas prácticas generales aplicables incluyen siempre definir restricciones de validación adecuadas para cada campo de la base de datos, utilizar estas restricciones para garantizar la integridad referencial entre tablas, y realizar pruebas exhaustivas para asegurar que las restricciones funcionan como se espera. Además, es recomendable documentar claramente todas las restricciones aplicadas en la base de datos para facilitar su mantenimiento y comprensión por parte de otros profesionales del equipo.

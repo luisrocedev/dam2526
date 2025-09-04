@@ -5,9 +5,10 @@
 Explica el contenido de cada carpeta (recursivamente) usando Ollama.
 - Construye un árbol GLOBAL (excluyendo .git) como contexto.
 - Para cada subcarpeta (excluyendo .git), solicita a Ollama una explicación
-  en español, sin código y agnóstica de tecnología.
+  en español, sin código y agnóstica de tecnología, en 4–5 párrafos continuos,
+  sin títulos ni listas y sin referencias explícitas a otras carpetas.
 - Guarda "Contenidos básicos.md" en cada carpeta.
-- Muestra por consola el PROMPT enviado y la RESPUESTA recibida.
+- Muestra en consola el PROMPT y la RESPUESTA.
 
 Requisitos:
   - Python 3.8+
@@ -34,7 +35,7 @@ TEMPERATURE = float(os.environ.get("OLLAMA_TEMPERATURE", "0.2"))
 NUM_CTX = int(os.environ.get("OLLAMA_NUM_CTX", "65536"))
 
 # Excluir directorios en cualquier nivel
-EXCLUDE_DIRS = {".git"}  # añade aquí p.ej. "node_modules", ".venv", "dist", "build", etc.
+EXCLUDE_DIRS = {".git"}  # añade aquí p.ej. "node_modules", ".venv", "dist", "build", "moodledata", etc.
 
 # Pausa entre peticiones
 SLEEP_BETWEEN_REQUESTS = float(os.environ.get("OLLAMA_SLEEP", "0.5"))
@@ -132,23 +133,24 @@ def main():
         print("Directorio base:", base)
         sys.exit(0)
 
-    # 3) Mensaje del sistema (reglas, agnóstico de tecnología)
+    # 3) Mensaje del sistema (reglas, agnóstico de tecnología y formato en 4–5 párrafos)
     system_msg = (
         "Eres un asistente experto en organización de proyectos y documentación técnica. "
-        "Redacta explicaciones claras, concisas y didácticas sobre el contenido de una carpeta. "
+        "Redacta una explicación clara, concisa y didáctica sobre el contenido de una carpeta. "
         "REQUISITOS OBLIGATORIOS:\n"
         "1) Responde en español.\n"
         "2) NO incluyas fragmentos de código; solo párrafos en prosa.\n"
         "3) Mantén la explicación agnóstica de tecnología: no menciones nombres de lenguajes, "
         "frameworks o herramientas concretas.\n"
-        "4) Enfócate en propósito, estructura, tipos de artefactos esperables, flujos habituales, "
-        "y buenas prácticas generales (organización, pruebas, configuración, documentación, automatización, etc.).\n"
+        "4) Escribe exactamente 4 o 5 párrafos continuos, sin títulos, sin viñetas y sin listas numeradas.\n"
+        "5) No hagas referencias explícitas a otras carpetas o archivos; puedes considerar su contexto sin nombrarlos.\n"
+        "6) Evita repetir ideas; no dupliques contenido entre párrafos.\n"
     )
 
     # Contexto global (árbol)
     context_header = (
         "A continuación tienes el árbol de directorios GLOBAL (contexto) del entorno actual. "
-        "Úsalo para comprender la organización general:\n\n"
+        "Úsalo únicamente para situar el papel de la carpeta sin referenciarlo explícitamente:\n\n"
         "```\n" + tree_text + "\n```\n"
     )
 
@@ -157,12 +159,11 @@ def main():
         rel = d.relative_to(base)
         user_prompt = (
             f"{context_header}\n"
-            f"Carpeta a documentar: `{rel}`.\n\n"
-            "Objetivo: redacta un documento breve de 'Contenidos básicos' para esta carpeta. "
-            "Cubre su propósito, responsabilidades principales, cómo se integra con el resto del proyecto, "
-            "qué contenidos suele albergar, flujos de trabajo habituales, y recomendaciones generales de calidad "
-            "(organización, validaciones, pruebas, configuración, observabilidad y documentación). "
-            "Recuerda: en español, sin código, y sin mencionar tecnologías concretas.\n"
+            f"Capítulo actual (carpeta): `{rel}`.\n\n"
+            "Escribe una explicación continua en 4–5 párrafos que describa el propósito del capítulo, "
+            "sus responsabilidades principales, el tipo de contenidos que suele albergar y cómo se contribuye al conjunto, "
+            "así como buenas prácticas generales aplicables. No incluyas títulos ni listas; no menciones tecnologías concretas; "
+            "no hagas referencias explícitas a otras carpetas o archivos; no repitas ideas y no incluyas código.\n"
         )
 
         # Mostrar PROMPT por consola

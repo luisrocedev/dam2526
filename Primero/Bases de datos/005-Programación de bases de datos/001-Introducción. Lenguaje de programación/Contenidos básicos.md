@@ -1,34 +1,11 @@
-### Contenidos básicos
+El capítulo `Primero/Bases de datos/005-Programación de bases de datos/001-Introducción. Lenguaje de programación` tiene como objetivo proporcionar una introducción a la programación de bases de datos, enfocándose en el lenguaje de programación que se utiliza para interactuar con ellas. Este capítulo es crucial porque establece las bases teóricas y prácticas necesarias para entender cómo escribir código que manipule los datos almacenados en una base de datos.
 
-#### Propósito
-La carpeta `Primero/Bases de datos/005-Programación de bases de datos/001-Introducción. Lenguaje de programación` tiene como objetivo proporcionar una introducción a los lenguajes de programación utilizados en el desarrollo y gestión de bases de datos. Este contenido es fundamental para entender cómo interactuar con las bases de datos desde un punto de vista programático.
+Las responsabilidades principales del capítulo incluyen explicar qué son los lenguajes de programación, su importancia en la programación de bases de datos, y cómo se utilizan para definir operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre las bases de datos. Además, aborda el concepto de sentencias SQL (Structured Query Language), que es un lenguaje estándar para interactuar con sistemas de gestión de bases de datos relacionales.
 
-#### Responsabilidades principales
-- Introducir conceptos básicos sobre lenguajes de programación.
-- Describir la sintaxis y estructura básica de los lenguajes utilizados en el desarrollo de aplicaciones que interactúan con bases de datos.
-- Explicar cómo estos lenguajes facilitan la manipulación, consulta y gestión de los datos almacenados en las bases de datos.
+El tipo de contenidos que suele albergar este capítulo incluye definiciones teóricas, explicaciones detalladas de los conceptos clave, ejemplos prácticos y posiblemente una introducción a herramientas o bibliotecas específicas que facilitan la programación de bases de datos. El contenido se estructura para proporcionar un enfoque gradual, iniciando con las ideas básicas y avanzando hacia conceptos más complejos.
 
-#### Integración con el resto del proyecto
-Esta carpeta se integra estrechamente con otros contenidos relacionados con bases de datos, como `002-Realización de consultas`, `003-Tratamiento de datos` y `004-Programación de bases de datos`. Proporciona las herramientas necesarias para entender cómo se pueden escribir programas que interactúan con las bases de datos.
+Este capítulo contribuye al conjunto del curso proporcionando los fundamentos necesarios para entender cómo interactuar con las bases de datos desde el punto de vista programático. Ayuda a los estudiantes a comprender no solo cómo almacenar y recuperar datos, sino también cómo realizar operaciones más avanzadas como la creación de tablas, la definición de restricciones y la manipulación de transacciones.
 
-#### Contenidos suele albergar
-La carpeta incluye los siguientes tipos de artefactos:
-- **Conceptos básicos**: Definiciones y explicaciones sobre lenguajes de programación utilizados en el desarrollo de aplicaciones que interactúan con bases de datos.
-- **Ejemplos prácticos**: Código simple que demuestra cómo usar los lenguajes para realizar operaciones básicas como inserción, consulta y eliminación de datos.
-- **Diagramas y esquemas**: Representaciones gráficas que ilustran la estructura y funcionamiento de los lenguajes de programación en el contexto de las bases de datos.
+En términos de buenas prácticas generales aplicables, el capítulo sugiere que los estudiantes deben familiarizarse con las mejores prácticas de programación al interactuar con bases de datos. Esto incluye la utilización de sentencias SQL seguras para evitar inyecciones SQL, la gestión adecuada de transacciones para mantener la integridad de los datos y la optimización de consultas para mejorar el rendimiento del sistema. Además, se recomienda que los estudiantes aprendan a utilizar herramientas de depuración y monitoreo para identificar y resolver problemas en el código que interactúa con las bases de datos.
 
-#### Flujos de trabajo habituales
-Los flujos de trabajo típicos incluyen:
-1. **Estudio de casos**: Analizar problemas específicos y diseñar soluciones utilizando lenguajes de programación para interactuar con las bases de datos.
-2. **Desarrollo iterativo**: Escribir, probar y depurar código que manipule los datos en la base de datos.
-3. **Documentación**: Mantener documentación detallada sobre el código y su funcionamiento.
-
-#### Recomendaciones generales de calidad
-- **Organización**: Mantén una estructura clara y jerárquica para facilitar la navegación y búsqueda de información.
-- **Validaciones**: Realiza pruebas exhaustivas para asegurar que los lenguajes y las operaciones son correctos y seguros.
-- **Pruebas**: Implementa pruebas unitarias y de integración para validar el funcionamiento del código.
-- **Configuración**: Documenta la configuración necesaria para ejecutar y probar el código.
-- **Observabilidad**: Incluye métricas y logs para monitorear el rendimiento y detectar problemas.
-- **Documentación**: Proporciona documentación detallada sobre cada concepto, ejemplo y procedimiento.
-
-Siguiendo estas recomendaciones, se asegurará que la carpeta `Primero/Bases de datos/005-Programación de bases de datos/001-Introducción. Lenguaje de programación` sea una fuente confiable y útil para entender los lenguajes utilizados en el desarrollo de aplicaciones que interactúan con bases de datos.
+En resumen, el capítulo `Primero/Bases de datos/005-Programación de bases de datos/001-Introducción. Lenguaje de programación` es un punto fundamental en la formación sobre programación de bases de datos, proporcionando una base sólida para entender y aplicar los lenguajes de programación necesarios para interactuar eficazmente con las bases de datos.
