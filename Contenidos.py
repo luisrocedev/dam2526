@@ -11,7 +11,7 @@ Nueva lógica solicitada:
      - Dentro, "Contenidos básicos.md"
      - No sobrescribir si ya existe.
 3) En cualquier otro caso (curso, asignatura, unidad didáctica, u otros apartados):
-     - Crear en la carpeta actual un archivo "001-Resumen.md" (sin subcarpeta)
+     - Crear en la carpeta actual un archivo "000-Resumen.md" (sin subcarpeta)
      - No sobrescribir si ya existe.
 
 Estilo:
@@ -57,7 +57,7 @@ SLEEP_BETWEEN_REQUESTS = float(os.environ.get("OLLAMA_SLEEP", "0.5"))
 # Nombres de salida
 OUTPUT_SUBFOLDER = "001-Contenidos básicos"
 OUTPUT_BASICO = "Contenidos básicos.md"
-OUTPUT_RESUMEN = "001-Resumen.md"
+OUTPUT_RESUMEN = "000-Resumen.md"
 
 # ---------------------- UTILIDADES ----------------------
 
@@ -249,7 +249,7 @@ def main():
                 print(f"[!] No se pudo escribir {out_path}: {e}")
 
         else:
-            # Caso 3: crear "001-Resumen.md" en la carpeta actual (sin subcarpeta)
+            # Caso 3: crear "000-Resumen.md" en la carpeta actual (sin subcarpeta)
             out_path = d / OUTPUT_RESUMEN
 
             if out_path.exists():
