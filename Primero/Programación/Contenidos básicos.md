@@ -1,7 +1,0 @@
-El capítulo `Primero/Programación` del contexto global se centra en el estudio de los fundamentos y aplicaciones prácticas de la programación informática. Su propósito es proporcionar una comprensión profunda de los conceptos, técnicas y herramientas necesarios para desarrollar software eficiente y seguro.
-
-Las responsabilidades principales de este capítulo incluyen la introducción a los elementos básicos del lenguaje de programación, el uso de objetos y estructuras de control, así como la manipulación avanzada de datos. También aborda temas como la lectura y escritura de información en diferentes formatos, el manejo de excepciones, y la documentación de aplicaciones.
-
-El tipo de contenidos que suele albergar este capítulo incluye explicaciones teóricas complementadas por ejemplos prácticos, diagramas y pseudocódigo. Se presentan conceptos desde los más fundamentales hasta las técnicas más avanzadas, asegurando una transición suave entre niveles de conocimiento.
-
-Este capítulo contribuye al conjunto del contexto global proporcionando una base sólida en programación, que es un componente crucial para el desarrollo de cualquier sistema informático. Las buenas prácticas generales aplicables incluyen la escritura de código limpio y legible, la realización de pruebas exhaustivas, la documentación adecuada y la gestión eficiente del ciclo de vida del software desde su concepción hasta su mantenimiento.

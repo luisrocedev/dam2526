@@ -1,9 +1,0 @@
-El capítulo `Primero/Bases de datos/005-Programación de bases de datos/003-Funciones` se centra en el estudio de las funciones dentro del contexto de la programación de bases de datos. Su propósito es proporcionar una comprensión profunda de cómo crear, utilizar y gestionar funciones en diferentes sistemas gestores de bases de datos (SGBDs), independientemente de su tipo o tecnología subyacente.
-
-Las responsabilidades principales de este capítulo incluyen explicar la definición de funciones, sus ventajas y desventajas, los tipos de funciones disponibles, cómo crearlas, cómo invocarlas y cómo gestionarlas. También aborda las mejores prácticas para el diseño y uso de funciones en SGBDs, como su optimización, seguridad y mantenimiento.
-
-El tipo de contenidos que suele albergar este capítulo incluye definiciones teóricas, ejemplos prácticos, explicaciones detalladas sobre la sintaxis específica de cada SGBD para crear y utilizar funciones, y discusiones sobre cómo las funciones pueden mejorar el rendimiento y la eficiencia de las consultas en una base de datos. Además, puede incluir secciones dedicadas a la depuración y al manejo de errores asociados con el uso de funciones.
-
-Este capítulo contribuye significativamente al conjunto proporcionando los fundamentos necesarios para desarrollar aplicaciones que requieren operaciones complejas o reutilizables en las bases de datos. Al entender cómo crear y utilizar funciones, los profesionales pueden mejorar la eficiencia de sus consultas, reducir el tiempo de respuesta y facilitar el mantenimiento del código.
-
-Las buenas prácticas generales aplicables incluyen la creación de funciones lo más generalmente utilizadas y reutilizables posibles, evitar el uso excesivo de funciones complejas que dificulten el mantenimiento, optimizar las consultas dentro de las funciones para mejorar el rendimiento, y documentar adecuadamente las funciones para facilitar su comprensión y uso por otros desarrolladores.

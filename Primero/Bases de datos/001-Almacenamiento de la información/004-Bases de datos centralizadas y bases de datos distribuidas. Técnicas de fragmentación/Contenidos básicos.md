@@ -1,9 +1,0 @@
-El capítulo "Bases de datos centralizadas y bases de datos distribuidas. Técnicas de fragmentación" se centra en la comparación y análisis de dos tipos principales de sistemas de gestión de bases de datos: los centralizados y los distribuidos, junto con las técnicas utilizadas para optimizar el almacenamiento y la recuperación de información en estos entornos.
-
-La responsabilidad principal de este capítulo es proporcionar una comprensión profunda de cómo se organizan y gestionan los datos en diferentes tipos de sistemas de bases de datos. Se explora cómo las decisiones sobre la centralización o distribución afectan el rendimiento, la escalabilidad y la disponibilidad del sistema.
-
-El tipo de contenidos que suele albergar incluye definiciones precisas de los conceptos clave, explicaciones detalladas de las ventajas y desventajas de cada tipo de base de datos, y una descripción exhaustiva de las técnicas de fragmentación utilizadas en las bases de datos distribuidas. Se abordan también ejemplos prácticos y casos de uso para ilustrar cómo estas tecnologías se aplican en la práctica.
-
-Este capítulo contribuye al conjunto proporcionando un marco teórico sólido sobre los sistemas de gestión de bases de datos, que es fundamental para entender cómo se diseñan y operan las infraestructuras informáticas modernas. Ayuda a los profesionales de TI a tomar decisiones informadas sobre la arquitectura de sus sistemas de información.
-
-Buenas prácticas generales aplicables incluyen considerar el tamaño y la naturaleza de los datos al elegir entre un sistema centralizado o distribuido, entender las implicaciones de la fragmentación en términos de rendimiento y consistencia, y mantener una estrategia de backup y recuperación sólida para garantizar la disponibilidad del sistema. Además, es crucial mantener actualizadas las técnicas y herramientas utilizadas para optimizar el almacenamiento y la recuperación de información en los sistemas de bases de datos.

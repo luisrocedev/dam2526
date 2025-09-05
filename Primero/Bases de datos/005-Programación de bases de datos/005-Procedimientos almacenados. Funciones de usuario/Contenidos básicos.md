@@ -1,9 +1,0 @@
-El capítulo `Primero/Bases de datos/005-Programación de bases de datos/005-Procedimientos almacenados. Funciones de usuario` tiene como objetivo principal proporcionar una comprensión detallada sobre la programación de procedimientos almacenados y funciones en sistemas de gestión de bases de datos (SGBD). Este capítulo desempeña un papel crucial en el aprendizaje y práctica de las habilidades necesarias para optimizar, mantener y mejorar la eficiencia del acceso a los datos.
-
-Los procedimientos almacenados son bloques de código precompilado que se ejecutan dentro del SGBD. Estos permiten encapsular lógica compleja y operaciones repetitivas, mejorando el rendimiento al evitar las repeticiones de consultas SQL en la capa de aplicación. Las funciones de usuario, por otro lado, son procedimientos almacenados que devuelven un valor o un conjunto de valores.
-
-El contenido del capítulo probablemente aborde conceptos fundamentales como la definición y creación de procedimientos y funciones, su sintaxis específica para diferentes SGBD, los parámetros que pueden recibir, las excepciones que pueden manejar, y cómo se ejecutan en el contexto de una transacción. También incluiría ejemplos prácticos de cómo implementar estas técnicas en situaciones reales.
-
-Además, el capítulo probablemente destaque la importancia de buenas prácticas en la programación de procedimientos almacenados y funciones, como la optimización del rendimiento, la seguridad adecuada, la documentación clara y la gestión eficiente de errores. Estas prácticas son esenciales para mantener el sistema funcional, escalable y fácil de mantener a largo plazo.
-
-En conjunto, este capítulo contribuye significativamente al aprendizaje integral de las bases de datos, proporcionando herramientas y técnicas valiosas que los profesionales pueden utilizar en sus proyectos diarios.
