@@ -48,6 +48,10 @@ NUM_CTX = int(os.environ.get("OLLAMA_NUM_CTX", "65536"))
 # Excluir directorios en cualquier nivel
 EXCLUDE_DIRS = {
     ".git",
+    # Solicitud: hacer invisibles para el cómputo
+    "101-Ejercicios",
+    "201-Criterios de evaluación",
+    "201-Criterios de evaluacion",  # variante sin tilde por si acaso
     # añade aquí p.ej. "node_modules", ".venv", "dist", "build", "moodledata", etc.
 }
 
@@ -84,6 +88,9 @@ def build_tree(root: Path) -> str:
             connector = "└── " if i == total - 1 else "├── "
             lines.append(prefix + connector + entry.name + ("/" if entry.is_dir() else ""))
             if entry.is_dir():
+                # No bajar a directorios excluidos
+                if is_excluded_dir(entry):
+                    continue
                 extension = "    " if i == total - 1 else "│   "
                 _walk(entry, prefix + extension)
 
@@ -94,6 +101,7 @@ def build_tree(root: Path) -> str:
 def iter_all_subdirs(root: Path) -> Iterable[Path]:
     """Itera todas las subcarpetas bajo `root` (recursivo), aplicando exclusiones."""
     for dirpath, dirnames, _filenames in os.walk(root):
+        # Filtra in-place para que os.walk no entre en las excluidas
         dirnames[:] = [d for d in dirnames if d not in EXCLUDE_DIRS]
         for d in dirnames:
             yield Path(dirpath) / d
@@ -153,10 +161,10 @@ def has_child_dirs(folder: Path) -> bool:
 def main():
     base = Path(__file__).resolve().parent
 
-    # 1) Árbol global (contexto)
+    # 1) Árbol global (contexto) — ya excluye las carpetas invisibles
     tree_text = build_tree(base)
 
-    # 2) Subcarpetas objetivo
+    # 2) Subcarpetas objetivo — ya excluye las carpetas invisibles
     target_dirs = list(iter_all_subdirs(base))
     if not target_dirs:
         print("No se han encontrado subcarpetas objetivo (excluyendo directorios ignorados).")
@@ -188,18 +196,18 @@ def main():
             print(f"[→] Carpeta contenedora detectada, se omite: {d}")
             continue
 
+        # Seguridad extra: si por cualquier razón aparece una de las invisibles, saltar
+        if is_excluded_dir(d):
+            print(f"[→] Directorio excluido (invisible): {d}")
+            continue
+
         rel = d.relative_to(base)
         depth = depth_relative(base, d)
         etiqueta = label_for_depth(depth)
 
-        # Determinar si es "subunidad didáctica" (caso de contenidos básicos)
+        # Determinar si es "subunidad didáctica"
         is_subunidad = (etiqueta == "subunidad didáctica")
 
-        # (Opcional) validación de hoja: en la jerarquía, subunidad debería ser hoja
-        # pero no forzamos; seguimos la etiqueta.
-        # Si quisieras reforzar: is_subunidad = etiqueta == "subunidad didáctica" and not has_child_dirs(d)
-
-        # Construir prompts diferentes según el caso
         if is_subunidad:
             # Caso 2: crear subcarpeta + "Contenidos básicos.md"
             out_dir = d / OUTPUT_SUBFOLDER
@@ -294,4 +302,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
